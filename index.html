@@ -3,94 +3,98 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fernanda Bezerra | Software Developer</title>
-  <!-- Bootstrap CSS -->
+  <title>Fernanda Bezerra | Projects</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
 
-<header class="bg-primary text-white text-center py-4 mb-4">
-  <h1>Fernanda Bezerra</h1>
-  <p>Full Stack Software Developer</p>
-</header>
+<div class="container py-5">
 
-<nav class="navbar navbar-expand-sm bg-light mb-4">
-  <div class="container justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
+  <h2 class="mb-5 text-center">Projects</h2>
 
-<main class="container">
+  <div class="row g-4">
 
-  <section id="projects" class="mb-5">
-    <h2 class="text-center mb-4">Projects</h2>
-
-    <div class="row g-4 justify-content-center">
-
-      <!-- Project Card -->
-      <div class="col-md-6">
-        <div class="card shadow-sm" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#cakeModal">
-          <img src="https://perdiziob.github.io/images/img1.png" class="card-img-top" alt="Admin Panel" />
-          <div class="card-body">
-            <h5 class="card-title">Cake Order Management System</h5>
-            <p class="card-text">
-              Full-stack app built with ASP.NET Core and SQL Server managing cake orders, clients, and payments.
-            </p>
-            <a href="https://github.com/PerdizioB/CakeMVC" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-              View on GitHub
-            </a>
-          </div>
+    <!-- Project 1 Card -->
+    <div class="col-md-6">
+      <div class="card shadow h-100" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalCake">
+        <img src="https://perdiziob.github.io/images/img1.png" class="card-img-top" alt="Cake Order Main Screen" />
+        <div class="card-body">
+          <h5 class="card-title">Cake Order Management System</h5>
+          <p class="card-text">Full-stack app with ASP.NET Core and SQL Server to manage cake orders, clients, and payments.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCake">More Info</button>
         </div>
       </div>
-
     </div>
-  </section>
 
-</main>
+    <!-- Project 2 Card -->
+    <div class="col-md-6">
+      <div class="card shadow h-100" style="cursor:pointer;" data-bs-toggle="modal" data-bs-target="#modalSQL">
+        <img src="https://perdiziob.github.io/images/sqlserver.png" class="card-img-top" alt="SQL Server Project" />
+        <div class="card-body">
+          <h5 class="card-title">SQL Server Scripts Collection</h5>
+          <p class="card-text">A set of SQL Server scripts and stored procedures for database management and queries.</p>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSQL">More Info</button>
+        </div>
+      </div>
+    </div>
 
-<!-- Modal -->
-<div class="modal fade" id="cakeModal" tabindex="-1" aria-labelledby="cakeModalLabel" aria-hidden="true">
+  </div>
+</div>
+
+<!-- Modal for Cake Project -->
+<div class="modal fade" id="modalCake" tabindex="-1" aria-labelledby="modalCakeLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="cakeModalLabel">Cake Order Management System</h5>
+        <h5 class="modal-title" id="modalCakeLabel">Cake Order Management System</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>This full-stack web application allows you to manage cake orders, customers, and payments efficiently.</p>
+        <p>This is a full-stack web application built with ASP.NET Core and SQL Server to efficiently manage cake orders, clients, and payments.</p>
         <ul>
-          <li>CRUD operations with clean architecture</li>
-          <li>Responsive UI using MVC pattern</li>
-          <li>Built with ASP.NET Core and SQL Server backend</li>
+          <li>CRUD operations with clean MVC architecture</li>
+          <li>Responsive and user-friendly UI</li>
+          <li>Secure backend with SQL Server database</li>
         </ul>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="https://perdiziob.github.io/images/img2.png" alt="Cart Screenshot" class="img-fluid rounded mb-3" />
-          </div>
-          <div class="col-md-6">
-            <img src="https://perdiziob.github.io/images/img3.png" alt="Edit Screenshot" class="img-fluid rounded mb-3" />
-          </div>
-          <div class="col-12">
-            <img src="https://perdiziob.github.io/images/img4.png" alt="Register Screenshot" class="img-fluid rounded" />
-          </div>
+        <div class="row g-3">
+          <div class="col-md-4"><img src="https://perdiziob.github.io/images/img2.png" alt="Cart Screen" class="img-fluid rounded" /></div>
+          <div class="col-md-4"><img src="https://perdiziob.github.io/images/img3.png" alt="Edit Screen" class="img-fluid rounded" /></div>
+          <div class="col-md-4"><img src="https://perdiziob.github.io/images/img4.png" alt="Register Screen" class="img-fluid rounded" /></div>
         </div>
       </div>
       <div class="modal-footer">
-        <a href="https://github.com/PerdizioB/CakeMVC" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-          View on GitHub
-        </a>
+        <a href="https://github.com/PerdizioB/CakeMVC" target="_blank" class="btn btn-primary">View on GitHub</a>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
 </div>
 
-<!-- Bootstrap JS Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Modal for SQL Project -->
+<div class="modal fade" id="modalSQL" tabindex="-1" aria-labelledby="modalSQLLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSQLLabel">SQL Server Scripts Collection</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>A comprehensive set of SQL Server scripts and stored procedures designed to simplify database management and querying.</p>
+        <ul>
+          <li>Optimized stored procedures</li>
+          <li>Database maintenance scripts</li>
+          <li>Examples of complex queries</li>
+        </ul>
+        <img src="https://perdiziob.github.io/images/sql-example.png" alt="SQL Scripts Example" class="img-fluid rounded" />
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/PerdizioB/SQLServer" target="_blank" class="btn btn-primary">View on GitHub</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
