@@ -146,6 +146,18 @@
       imageModal.show();
     });
   });
+
+  const modals = document.querySelectorAll('[data-bs-toggle="modal"]');
+
+modals.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const openModal = document.querySelector('.modal.show');
+    if (openModal) {
+      const modalInstance = bootstrap.Modal.getInstance(openModal);
+      modalInstance.hide();
+    }
+  });
+});
 </script>
 </body>
 </html>
