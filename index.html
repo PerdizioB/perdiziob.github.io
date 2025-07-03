@@ -42,6 +42,7 @@
     .card {
       border: none;
       transition: transform 0.2s;
+      cursor: pointer;
     }
     .card:hover {
       transform: scale(1.02);
@@ -84,21 +85,25 @@
   <section id="projects">
     <h2 class="text-center mb-5">Projects</h2>
     <div class="row g-4">
+      <!-- Cake Order Management System -->
       <div class="col-md-6">
-        <div class="card shadow h-100">
+        <div class="card shadow h-100" data-bs-toggle="modal" data-bs-target="#modalCake">
           <img src="https://perdiziob.github.io/images/img1.PNG" class="card-img-top zoom-image" alt="Cake Order Main Screen" />
           <div class="card-body">
             <h5 class="card-title">Cake Order Management System</h5>
             <p class="card-text">App built with ASP.NET Core, EF Core, SQL Server, and Bootstrap to manage cake orders and clients.</p>
+            <button class="btn btn-primary">More Info</button>
           </div>
         </div>
       </div>
+      <!-- SQL Server Scripts Collection -->
       <div class="col-md-6">
-        <div class="card shadow h-100">
+        <div class="card shadow h-100" data-bs-toggle="modal" data-bs-target="#modalSQL">
           <img src="https://perdiziob.github.io/images/sql1.PNG" class="card-img-top zoom-image" alt="SQL Server Project" />
           <div class="card-body">
             <h5 class="card-title">SQL Server Scripts Collection</h5>
             <p class="card-text">Scripts and stored procedures to simplify and automate database tasks.</p>
+            <button class="btn btn-primary">More Info</button>
           </div>
         </div>
       </div>
@@ -115,6 +120,85 @@
       </div>
       <div class="modal-footer border-0 justify-content-center">
         <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for Cake Project -->
+<div class="modal fade" id="modalCake" tabindex="-1" aria-labelledby="modalCakeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalCakeLabel">Cake Order Management System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          This is a full-stack web application developed with <strong>ASP.NET Core MVC</strong>, 
+          <strong>Entity Framework Core</strong>, <strong>SQL Server</strong>, and <strong>Bootstrap 5</strong>. 
+          It efficiently manages cake orders, clients, and payments, offering both functionality and a modern user experience.
+        </p>
+        <ul>
+          <li>Clean and scalable <strong>MVC architecture</strong> with layered separation</li>
+          <li><strong>Entity Framework Core</strong> for object-relational mapping (ORM)</li>
+          <li><strong>Responsive UI</strong> using Bootstrap 5</li>
+          <li>Secure data operations with <strong>SQL Server</strong> backend</li>
+          <li>User-friendly interface for managing orders, clients, and payments</li>
+        </ul>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/img2.PNG" alt="Cart Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/img3.PNG" alt="Edit Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/img4.PNG" alt="Register Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/PerdizioB/HMCP" target="_blank" class="btn btn-primary">View on GitHub</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal for SQL Project -->
+<div class="modal fade" id="modalSQL" tabindex="-1" aria-labelledby="modalSQLLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSQLLabel">SQL Server Scripts Collection</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>A comprehensive set of SQL Server scripts and stored procedures designed to simplify database management and querying.</p>
+        <ul>
+          <li>Optimized stored procedures</li>
+          <li>Database maintenance scripts</li>
+          <li>Examples of complex queries</li>
+        </ul>
+        <div class="row g-3">
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/sql2.PNG" alt="Cart Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/sql3.PNG" alt="Edit Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+          <div class="col-md-4">
+            <img src="https://perdiziob.github.io/images/sql4.PNG" alt="Register Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+          <div class="col-md-4 mt-3">
+            <img src="https://perdiziob.github.io/images/img5.PNG" alt="Extra Screen" class="img-fluid rounded zoom-image" style="cursor:pointer" />
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://github.com/PerdizioB/SQLServer" target="_blank" class="btn btn-primary">View on GitHub</a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
